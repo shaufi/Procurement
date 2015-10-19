@@ -2,7 +2,7 @@
 
  	if(isset($_POST["add"]))
  	{
- 		include('config.php');
+ 		include('Connect.php');
 
  		$ID = $_POST['ID'];
 		$Product = $_POST['Product']; 		
@@ -13,7 +13,7 @@
 
  		$sql = mysql_query("INSERT INTO rfq
  		VALUES ('$ID','$Product','$Quantity','
- 			$Unit_Price','$Taxes','$Subtotal')" or die (mysql_error());
+ 			$Unit_Price','$Taxes','$Subtotal')",$con) or die (mysql_error());			
 
 		if($sql){
 		
