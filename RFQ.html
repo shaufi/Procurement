@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>Shaufi</title>
+ </head>
+ <body>
+
+    <style>
+    #orderdate{
+    	float:right;
+    }
+    body{
+    	background: lightblue;
+    }
+
+    </style>
+    
+    <script>
+    table.children[0].appendChild(row);
+	}; 
+	function windowClose() { 
+	window.open('','_parent',''); 	
+	window.close();
+	} 
+    </script>
+
+</head>
+<body>
+
+<form action="insert.php" method ="post">
+
+<h1 style="color:red"><center> Request For Quatation </center></h1>
+
+<form>
+<br>
+RFQ ID:
+<input type="text" name="RFQ ID" id="RFQ ID" /><br />
+<br>
+
+Supplier:
+<input type="text" name="Supplier" id="Supplier" />
+
+
+Order_date:
+<input type="date" name="Order_Date" id="Order_Date" align="right"/><br />
+</form>
+
+<form>
+<br>
+<h3 style="color:blue">Material </h3>
+
+ID:
+<right><input type="text" name="ID" id="ID"/><right>
+
+Product:
+<input type="text" name="Product" id="Product"/>
+<br />
+<br>
+
+<br>
+Quantity:
+<input type="text" name="Quantity" id="Quantity"/><br />
+
+<br>
+Unit_Price:
+<input type "text" name ="Unit_Price" id="Unit_Price"/></br>
+<br>
+
+<br>
+Taxes:
+<input type="text" name="Taxes" id="Taxes"/><br />
+
+<br>
+Subtotal:
+<input type="text" name="Subtotal" id="Subtotal"/><br />
+</form>
+
+<br>
+<input type="submit" value="add" name="add">
+
+</br>
+<br>
+
+<form action="file:///G:/manlog1.html"><input type="submit" value="Send"> 
+
+<right><input type="button" value="Cancel" onclick="windowClose()"></right>
+</form> 
+
+</body>
+</html>
